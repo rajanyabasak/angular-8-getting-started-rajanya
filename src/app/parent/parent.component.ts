@@ -8,7 +8,7 @@ import { products } from '../products';
   styleUrls: ['./parent.component.css']
 })
 
-export class ProductListComponent {
+export class ParentComponent {
   products = products;
 
   share() {
