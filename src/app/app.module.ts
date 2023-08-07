@@ -6,6 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ParentComponent } from './parent/parent.component';
+import { ChildrenComponent } from './children/children.component';
 
 @NgModule({
   imports: [

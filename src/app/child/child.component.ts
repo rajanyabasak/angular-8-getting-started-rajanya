@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-children',
-  templateUrl: './children.component.html',
-  styleUrls: ['./children.component.css'],
+  selector: 'app-child',
+  templateUrl: './child.component.html',
+  styleUrls: ['./child.component.css'],
 })
 export class ChildrenComponent implements OnInit {
   name: string;
