@@ -14,6 +14,8 @@ import { ChildComponent } from './child/child.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ParentComponent },
+      { path: 'child/:id', component: ChildComponent },
+      { path: 'child', component: ChildComponent}
     ])
   ],
   declarations: [
