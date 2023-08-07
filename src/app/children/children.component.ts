@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-child',
-  templateUrl: './child.component.html',
-  styleUrls: ['./child.component.css'],
+  selector: 'app-children',
+  templateUrl: './children.component.html',
+  styleUrls: ['./children.component.css'],
 })
-export class ChildComponent implements OnInit {
+export class ChildrenComponent implements OnInit {
   name: string;
   id: number;
 
