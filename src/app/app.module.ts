@@ -6,7 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ParentComponent } from './parent/parent.component';
-import { ChildrenComponent } from './children/children.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   imports: [
@@ -19,7 +19,8 @@ import { ChildrenComponent } from './children/children.component';
   declarations: [
     AppComponent,
     TopBarComponent,
-    ParentComponent
+    ParentComponent,
+    ChildComponent
   ],
   bootstrap: [ AppComponent ]
 })

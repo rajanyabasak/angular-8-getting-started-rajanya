@@ -6,7 +6,7 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './child.component.html',
   styleUrls: ['./child.component.css'],
 })
-export class ChildrenComponent implements OnInit {
+export class ChildComponent implements OnInit {
   name: string;
   id: number;
 
