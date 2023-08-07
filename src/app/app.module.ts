@@ -5,7 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { ParentComponent } from './parent/parent.component';
+import { ProductListComponent } from './product-list/product-list.component';
 import { ChildComponent } from './child/child.component';
 
 @NgModule({
@@ -13,21 +13,20 @@ import { ChildComponent } from './child/child.component';
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ParentComponent },
+      { path: '', component: ProductListComponent },
       { path: 'child/:id', component: ChildComponent },
-      { path: 'child', component: ChildComponent}
-    ])
+      {path: 'child', component: ChildComponent}
+    ]),
   ],
   declarations: [
     AppComponent,
-    TopBarComponent,
-    ParentComponent,
     ChildComponent,
+    TopBarComponent,
+    ProductListComponent,
   ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
-
+export class AppModule {}
 
 /*
 Copyright Google LLC. All Rights Reserved.
