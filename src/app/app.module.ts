@@ -22,7 +22,7 @@ import { ChildComponent } from './child/child.component';
     AppComponent,
     TopBarComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
   ],
   bootstrap: [ AppComponent ]
 })
