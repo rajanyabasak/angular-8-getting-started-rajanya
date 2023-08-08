@@ -1,5 +1,5 @@
 import { HttpParams } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -10,6 +10,12 @@ import { ActivatedRoute } from '@angular/router';
 export class ChildComponent implements OnInit {
   name: string='Rajanya';
   id: number=1;
+
+  @Output() dataEvent = new EventEmitter<{ id: number; name: string}>();
+
+  sendDataToProductListComponent() {
+    this.dataEvent.emit({ id: this.id, name: this.name});
+  }
 
   constructor(private route: ActivatedRoute) {}
 
