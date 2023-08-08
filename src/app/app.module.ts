@@ -6,7 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
-import { ChildrenComponent } from './children/children.component';
+import { ChildComponent } from './component/child/child.component';
 
 @NgModule({
   imports: [
@@ -14,13 +14,12 @@ import { ChildrenComponent } from './children/children.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
-      { path: 'children/:id', component: ChildrenComponent },
-      {path: 'children', component: ChildrenComponent}
+      { path: 'child', component: ChildComponent },
     ]),
   ],
   declarations: [
     AppComponent,
-    ChildrenComponent,
+    ChildComponent,
     TopBarComponent,
     ProductListComponent,
   ],
