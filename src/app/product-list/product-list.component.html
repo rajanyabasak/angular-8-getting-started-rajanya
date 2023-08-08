@@ -1,2 +1,9 @@
 <br />
+<app-child (nameChange) = "onNameChange($event)" (idChange) = "onIdChange($event)"></app-child>
 <a [routerLink]="['/child']" [queryParams]="{ id: id, name: name }">Child</a>
+
+<!--<app-child
+  [name]="name"
+  [id]="id"
+  (messageEvent)="receiveMessage($event)"
+></app-child>-->

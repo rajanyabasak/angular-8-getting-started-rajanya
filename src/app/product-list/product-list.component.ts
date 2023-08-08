@@ -7,18 +7,27 @@ import { products } from '../products';
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css'],
-  template: `<app-child (dataEvent)="handleDataEvent($event)"></app-child>`,
 })
 export class ProductListComponent {
-  products = products;
+  name: string;
+  id: number;
 
-  constructor(private router: Router){}
-
-  handleDataEvent(data: { id: number; name: string}) {
-    this.router.navigate(['/child'], {
-      queryParams: { id: data.id, name: data.name},
-    })
+  onNameChange(name: string) {
+    this.name = name;
   }
+
+  onIdChange(id: number) {
+    this.id = id;
+  }
+  //products = products;
+
+  // constructor(private router: Router){}
+
+  // handleDataEvent(data: { id: number; name: string}) {
+  //   this.router.navigate(['/some-route'], {
+  //     queryParams: { id: data.id, name: data.name},
+  //   })
+  // }
 
   share() {
     window.alert('The product has been shared!');
