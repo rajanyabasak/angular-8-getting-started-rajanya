@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { products } from '../products';
 
@@ -14,7 +15,7 @@ export class ProductListComponent {
   constructor(private router: Router){}
 
   handleDataEvent(data: { id: number; name: string}) {
-    this.router.navigate(['/some-route'], {
+    this.router.navigate(['/child'], {
       queryParams: { id: data.id, name: data.name},
     })
   }
