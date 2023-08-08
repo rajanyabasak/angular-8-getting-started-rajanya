@@ -8,8 +8,8 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./child.component.css'],
 })
 export class ChildComponent implements OnInit {
-  name: string;
-  id: number;
+  name: string='Rajanya';
+  id: number=1;
 
   constructor(private route: ActivatedRoute) {}
 
